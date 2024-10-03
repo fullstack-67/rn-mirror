@@ -18,7 +18,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.nnnpooh.testapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,6 +35,18 @@
           "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4ae875a2-75a4-46d3-8629-472bcfda4468"
+      }
+    },
+    "owner": "nnnpooh",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/4ae875a2-75a4-46d3-8629-472bcfda4468"
+    }
   }
 }
